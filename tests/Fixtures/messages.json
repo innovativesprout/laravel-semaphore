@@ -1,0 +1,18 @@
+[
+    {
+        "message_id": 12345,
+        "user_id": 54321,
+        "user": "timmy@toolbox.com",
+        "account_id": 987654,
+        "account": "My Account",
+        "recipient": "639998887777",
+        "message": "Your order shipped",
+        "sender_name": "MySenderName",
+        "network": "Globe",
+        "status": "Queued",
+        "type": "Single",
+        "source": "Api",
+        "created_at": "2020-01-01 01:01:01",
+        "updated_at": "2020-01-01 01:01:01"
+    }
+]

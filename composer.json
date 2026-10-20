@@ -1,0 +1,63 @@
+{
+    "name": "innovativesprouts/laravel-semaphore",
+    "description": "A modern Laravel client and notification channel for the Semaphore SMS API.",
+    "keywords": ["laravel", "semaphore", "sms", "philippines", "otp", "notifications"],
+    "homepage": "https://github.com/innovativesprout/laravel-semaphore",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Innovative Sprouts"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/innovativesprout/laravel-semaphore/issues",
+        "source": "https://github.com/innovativesprout/laravel-semaphore"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^12.0 || ^13.0",
+        "illuminate/http": "^12.0 || ^13.0",
+        "illuminate/notifications": "^12.0 || ^13.0",
+        "illuminate/support": "^12.0 || ^13.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "pestphp/pest": "^3.0 || ^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "InnovativeSprouts\\Semaphore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "InnovativeSprouts\\Semaphore\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "analyse": "phpstan analyse",
+        "format": "pint"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "InnovativeSprouts\\Semaphore\\SemaphoreServiceProvider"
+            ],
+            "aliases": {
+                "Semaphore": "InnovativeSprouts\\Semaphore\\Facades\\Semaphore"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
